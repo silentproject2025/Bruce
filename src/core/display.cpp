@@ -809,7 +809,7 @@ void drawStatusBar() {
 #endif
     } else {
         setTftDisplay(12, 12, bruceConfig.priColor, 1, bruceConfig.bgColor);
-        tft.print "Silent_ghost "
+       tft.print("Silent Ghost " + String(BRUCE_VERSION));
     }
 }
 

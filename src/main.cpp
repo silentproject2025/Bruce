@@ -223,7 +223,7 @@ void boot_screen() {
     tft.drawCentreString(BRUCE_VERSION, tftWidth / 2, 25, 1);
     tft.setTextSize(FM);
     tft.drawCentreString(
-        "NET HUNTER", tftWidth / 2, tftHeight + 2, 1
+        "silent project", tftWidth / 2, tftHeight + 2, 1
     ); // will draw outside the screen on non touch devices
 }
 
@@ -515,6 +515,7 @@ void loop() {
     vTaskDelay(10 / portTICK_PERIOD_MS);
 }
 #endif
+
 
 
 

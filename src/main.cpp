@@ -220,7 +220,7 @@ void boot_screen() {
     tft.drawPixel(0, 0, bruceConfig.bgColor);
     tft.drawCentreString("SILENT_PROJECT", tftWidth / 2, 10, 1);
     tft.setTextSize(FP);
-    tft.drawCentreString(modified, tftWidth / 2, 25, 1);
+    tft.drawCentreString(BRUCE_VERSION, tftWidth / 2, 25, 1);
     tft.setTextSize(FM);
     tft.drawCentreString(
         "silent project", tftWidth / 2, tftHeight + 2, 1
@@ -515,6 +515,7 @@ void loop() {
     vTaskDelay(10 / portTICK_PERIOD_MS);
 }
 #endif
+
 
 
 
